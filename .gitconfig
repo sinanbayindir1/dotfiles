@@ -3,6 +3,7 @@
 	email = 111156787+isnabn@users.noreply.github.com
 [core]
 	editor = nano
+	excludesFile = /Users/sb/.gitignore
 [init]
 	defaultBranch = main
 [merge]
