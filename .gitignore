@@ -1,0 +1,5 @@
+*.DS_Store
+*.LSOverride
+.vscode
+Thumbs.db
+.bundle
