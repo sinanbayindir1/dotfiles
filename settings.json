@@ -1,0 +1,121 @@
+{
+  "breadcrumbs.enabled": false,
+  // The number of spaces a tab is equal to.
+  // This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
+  // Controls whether the editor has code folding enabled.
+  "editor.folding": false,
+  // Format a file on save. A formatter must be available,the file must not be saved after delay, and the editor must not be shutting down.
+  "editor.formatOnSave": true,
+  // Controls whether the minimap is shown.
+  "editor.minimap.enabled": false,
+  // Controls how suggestions are pre-selected when showing the suggest list.
+  //  - first: Always select the first suggestion.
+  //  - recentlyUsed: Select recent suggestions unless further typing selects one, e.g. `console.| -> console.log` because `log` has been completed recently.
+  //  - recentlyUsedByPrefix: Select suggestions based on previous prefixes that have completed those suggestions, e.g. `co -> console` and `con -> const`.
+  "editor.suggestSelection": "first",
+  // Controls whether the editor should render indent guides.
+  "editor.guides.indentation": true,
+  // Controls whether the smooth caret animation should be enabled.
+  "editor.cursorSmoothCaretAnimation": true,
+  // Controls whether bracket pair colorization is enabled or not. Use `workbench.colorCustomizations` to override the bracket highlight colors.
+  "editor.bracketPairColorization.enabled": true,
+  // Defines a default formatter which takes precedence over all other formatter settings. Must be the identifier of an extension contributing a formatter.
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // Characters that will be used as word separators when doing word related navigations or operations.
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  // Controls how the editor should render the current line highlight.
+  "editor.renderLineHighlight": "all",
+
+  /* Font Settings */
+  // Controls the font family.
+  "editor.fontFamily": "Fira Code",
+  // Configures font ligatures or font features.
+  // Can be either a boolean to enable/disable ligatures or
+  // a string for the value of the CSS 'font-feature-settings' property.
+  "editor.fontLigatures": true,
+  // Controls the font size in pixels.
+  "editor.fontSize": 16,
+
+  // When enabled, will trim trailing whitespace when saving a file.
+  "files.trimTrailingWhitespace": false,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    // Hide js files after running tsc.
+    "**/*.js": { "when": "$(basename).ts" }
+  },
+  // ****Note:*** If this setting is 'off', no telemetry will be sent regardless of other telemetry settings. If this setting is set to anything except 'off' and telemetry is disabled with deprecated settings, no telemetry will be sent.*
+  //
+  //  - all: Sends usage data, errors, and crash reports.
+  //  - error: Sends general error telemetry and crash reports.
+  //  - crash: Sends OS level crash reports.
+  //  - off: Disables all product telemetry.
+  "telemetry.telemetryLevel": "off",
+
+  /* Terminal Settings */
+  // Controls the font size in pixels of the terminal.
+  "terminal.integrated.fontSize": 16,
+  // Controls whether text selected in the terminal will be copied to the clipboard.
+  "terminal.integrated.copyOnSelection": false,
+  // Controls whether the terminal cursor blinks.
+  "terminal.integrated.cursorBlinking": true,
+
+  // Specifies the file icon theme used in the workbench or 'null' to not show any file icons.
+  "workbench.iconTheme": "vscode-great-icons",
+  // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
+  "window.zoomLevel": 0,
+  // Controls the Better Comments extension.
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true
+}
