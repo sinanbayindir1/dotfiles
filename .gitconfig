@@ -1,68 +1,10 @@
 [user]
+	email = 111156787+sinonbayindir@users.noreply.github.com
 	name = Sinan Bayindir
-	email = 111156787+isnabn@users.noreply.github.com
-[core]
-	editor = nano
-	excludesFile = /Users/sb/.gitignore
 [init]
 	defaultBranch = main
-[merge]
-	tool = Kaleidoscope
-[help]
-	autocorrect = 1
-[alias]
-	a = add
-	aa = add .
-	ai = add -i
-	b = branch
-	c = clone
-	ca = commit -a
-	cam = commit -am
-	co = checkout
-	cob = checkout -b
-	d = diff
-	dc = diff --cached
-	del = branch -D
-	dv = difftool -t Kaleidoscope -y
-	f = fetch --all --prune
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-	l = log --graph --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\" --abbrev-commit
-	ll = log --oneline
-	last = log -1 HEAD --stat
-	m = mergetool
-	p = push
-	po = push origin
-	r = reset --hard HEAD
-	rm = rm -r
-	rv = remote -v
-	rev = revert HEAD
-	rmc = rm -r --cached
-	s = status
-	search = !git rev-list --all | xargs git grep -F
-	
-	
-	
-
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
+[color]
+	ui = true
+[core]
+	editor = nano
+	excludesfiles = ~/.gitignore
